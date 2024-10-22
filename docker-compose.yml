@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+    run:
+      build:
+        context: .
+        dockerfile: .devcontainer/cpp.Dockerfile
+      working_dir: /app
+      init: true
+      command: bash -c "cd /app && cmake -S . -B build && cd build && make -j4 && ./cli/cli_main"
+
+    test:
+      build:
+        context: .
+        dockerfile: .devcontainer/cpp.Dockerfile
+      working_dir: /app
+      init: true
+      command: bash -c "cd /app && cmake -S . -B build && cd build && make -j4 && ./tests/test_main"

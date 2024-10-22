@@ -1,0 +1,8 @@
+{
+    "editor.defaultFormatter": "ms-vscode.cpptools",
+    "editor.formatOnSave": true,
+    "files.associations": {
+        "*.jsonl": "json",
+        "ostream": "cpp"
+    },
+}
