@@ -24,6 +24,7 @@
                 "GitHub.copilot-chat",
                 "wayou.vscode-todo-highlight",
 				"mhutchie.git-graph",
+				"ms-vscode.hexeditor"
 			]
 		}
 	},
@@ -32,7 +33,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "gcc -v",
+	"postCreateCommand": "rm -fr /workspaces/cpp-dev-template/build",
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	"remoteUser": "root"
