@@ -1,6 +1,5 @@
 #include <iostream>
-#include <opencv2/opencv.hpp>
-#include "src/add.h"
+#include "add.h"
 
 int main()
 {

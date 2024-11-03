@@ -2,6 +2,7 @@
 #define ADD_H
 
 #include <concepts>
+#include <opencv2/opencv.hpp>
 
 template <typename T>
     requires std::integral<T> || std ::floating_point<T>

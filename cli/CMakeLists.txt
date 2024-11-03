@@ -5,9 +5,13 @@ add_executable(
     ${SRC_FILES}
 )
 
-target_include_directories(cli_main PRIVATE ${SHARED_INCLUDE_DIR})
+target_include_directories(
+    cli_main 
+    PRIVATE 
+    ${CMAKE_SOURCE_DIR}/src
+    )
 
 target_link_libraries(
     cli_main
-    ${SHARED_LIBRARY_DIR}
+    operator_lib
 )
